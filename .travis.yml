@@ -1,8 +1,13 @@
 language: node_js
 node_js:
-  - "stable"
+  - stable
 cache:
-  directories: 
-  - node_modules
+  directories:
+    - node_modules
 script:
   - yarn test
+deploy:
+  provider: heroku
+  api_key:
+    secure: A13ZOT4UxmEcv1RN75qQP4B+yaHs9GOL88BLE7T7mmJF8HpkGEjatGnIedJ6ezW6ckgNKbWvbwZGZmEM67ZcBsUsHiYAxqa5+0QaI11L5ZlEJI0PT4iW9QCFdNepqnRsyNAxuQ3tx2MDTILPta7/rOF1PN+YnpcYIZuA1kHo0PtNyipiPmxOyCUXNkVT2zOwSVzB3v1VTI7aX9B1hYa61wn+lr7dGVi0yslS7rA/yIWsqLESEVdVrN9y7nVLmBXgUF9dG1U5fedWNz/gHhBFkOTSIZGGVaLB741Bwjiplz3dClix1C6a2Fu2Od7rduPrvlMV+Fsh80Vqx6pOtLPuB6EgoekgERmKxhgSiFXdoY2fVZ9S6ZNp9KG0Ky7m26pdxW/dfK4gcjS8sIN2r4CI5H6jxb9MbYcMY7AoQXU14BwdmD91cBQiUQZ3OZGpcQ7asIGzhvlf70eMkCXsBmq5Mt3M0cuk61YffNrezqzX/lWnraWpvlQMl+01Hes4HHz/XrOZy9E+zdtUVWogfzrBhIb0C/SCpv94eTRdYdk0zXHBupCDArJn3W9YMrceIawsKPRJ2DT9CrFL3tqG5V9x5hIChdAHrIIWJXgX/Y/whUN1kNM4W8S8YOlTAhEyT9gRPwRaBXgHmdElz+QkHlwqGf5lTDM+2GdC8PjjtHKcqGM=
+  app: glacial-everglades-76085
