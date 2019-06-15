@@ -11,7 +11,7 @@ import styles from "./Login.module.css";
 class Login extends Component {
   state = {
     isValidPhone: false,
-    phone: "+7(950)45–88–910", 
+    phone: "+7 (950) 45–88–910", 
     code: "",
   };
 
@@ -35,8 +35,8 @@ class Login extends Component {
     return (
       <div className={styles["auth"]}>
         <div className={styles["auth__logo"]}>
-          <span>Школьный Автобус</span>
-          <i>Родитель</i>
+          <span>Ребенок в пути</span>
+          <i>Автобус онлайн</i>
         </div>
 
         <div className={styles["auth__form"]}>
