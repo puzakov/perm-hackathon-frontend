@@ -8,17 +8,17 @@ import "./layout.css";
 import App from "./components/App";
 import createStore from "./store";
 import { Provider } from "react-redux";
-import { persistStore } from "redux-persist";
-import { PersistGate } from "redux-persist/integration/react";
+// import { persistStore } from "redux-persist";
+// import { PersistGate } from "redux-persist/integration/react";
 
 const store = createStore();
-const persistor = persistStore(store);
+// const persistor = persistStore(store);
 
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate loading={null} persistor={persistor}>
+    {/* <PersistGate loading={null} persistor={persistor}> */}
       <App />
-    </PersistGate>
+    {/* </PersistGate> */}
   </Provider>,
   document.getElementById("root")
 );

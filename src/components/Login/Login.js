@@ -10,7 +10,9 @@ import styles from "./Login.module.css";
 
 class Login extends Component {
   state = {
-    isValidPhone: false
+    isValidPhone: false,
+    phone: "+7(950)45–88–910", 
+    code: "",
   };
 
   handleSubmit = () => {
@@ -23,8 +25,13 @@ class Login extends Component {
     this.setState({isValidPhone: true})
   };
 
+  handleChange = (e) => { 
+    const { name, value } =  e.target
+    this.setState({[name]: value})
+  }
+
   render() {
-    const { isValidPhone } = this.state;
+    const { isValidPhone, phone, code } = this.state;
     return (
       <div className={styles["auth"]}>
         <div className={styles["auth__logo"]}>
@@ -39,9 +46,11 @@ class Login extends Component {
                 <input
                   type="text"
                   className={"ui-input__field"}
-                  value="+7 (950) 45–88–910"
+                  value={phone}
                   placeholder="Номер телефона"
+                  name="phone"
                   id="auth-phone"
+                  onChange={this.handleChange}
                 />
                 <span className={"ui-input__line"} />
               </div>
@@ -53,9 +62,11 @@ class Login extends Component {
                 <input
                   type="text"
                   className={"ui-input__field"}
-                  value=""
+                  value={code}
                   placeholder="Введите код из СМС"
+                  name="code"
                   id="auth-sms"
+                  onChange={this.handleChange}
                 />
                 <span className={"ui-input__line"} />
               </div>
