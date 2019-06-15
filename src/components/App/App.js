@@ -4,7 +4,7 @@ import { getIsAuthorized } from "../../modules/Auth";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import PrivateRoute from "../PrivateRoute";
 // import Header from "../Header";
-// import Map from "../Map";
+import Map from "../Map";
 import Login from "../Login";
 
 class App extends Component {
