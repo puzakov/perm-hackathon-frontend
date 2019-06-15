@@ -35,7 +35,7 @@ class Login extends Component {
     return (
       <div className={styles["auth"]}>
         <div className={styles["auth__logo"]}>
-          <span>Ребенок в пути</span>
+          <span>РЕБЁНОК В ПУТИ</span>
           <i>Автобус онлайн</i>
         </div>
 

@@ -30,8 +30,8 @@ class Map extends Component {
       <>
         <header class={"header"}>
           <div class={"header__logo"}>
-            <span>Школьный Автобус</span>
-            <i>Родитель</i>
+            <span>РЕБЁНОК В ПУТИ</span>
+            <i>Автобус онлайн</i>
           </div>
         </header>
 
