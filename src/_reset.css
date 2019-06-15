@@ -1,0 +1,34 @@
+/* Сброс margin и padding
+=========================================================== */
+*,
+::before,
+::after { margin: 0; padding: 0; outline: none; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0,0,0,0); }
+
+
+/* Фон страницы и шрифт основного текста
+=========================================================== */
+html { height: 100%; background-color: #fff; color: #000; overflow: hidden; }
+	body { height: 100%; font-family: 'roboto', sans-serif; font-weight: normal; overflow: hidden; }
+
+
+/* Сброс тегов html5
+=========================================================== */
+section, header, footer, content, hgroup, nav, aside, article { display: block; }
+mark { display: inline; }
+
+
+/* Прочие сбросы
+=========================================================== */
+img { vertical-align: middle; border: none; }
+
+	a { color: #000; text-decoration: none; }
+
+table { width: 100%; border-spacing: 0; border-collapse: collapse; }
+	td,
+	th { vertical-align: top; }
+	
+input,
+textarea,
+button,
+select,
+option { font-family: 'roboto', sans-serif; font-weight: normal; color: #000; }

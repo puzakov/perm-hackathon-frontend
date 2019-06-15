@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./_variables.css";
+import "./_fonts.css";
+import "./_reset.css";
+import "./ui.css";
+import "./layout.css";
 import App from "./components/App";
 import createStore from "./store";
 import { Provider } from "react-redux";

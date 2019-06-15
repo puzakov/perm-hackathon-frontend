@@ -1,0 +1,38 @@
+/* Переменные
+=========================================================== */
+body {
+	
+	/* Размер шрифта стандартный */
+	--font_size: 16px;
+	
+	/* Roboto */
+	--thin: 100 normal var(--font_size) 'roboto', sans-serif;
+	--light: 200 normal var(--font_size) 'roboto', sans-serif;
+	--regular: normal normal var(--font_size) 'roboto', sans-serif;
+	--medium: 500 normal var(--font_size) 'roboto', sans-serif;
+	--bold: bold normal var(--font_size) 'roboto', sans-serif;
+	--black: 800 normal var(--font_size) 'roboto', sans-serif;
+	
+	/* Roboto Condensed */
+	--cond_regular: normal normal var(--font_size) 'roboto_cond', sans-serif;
+	--cond_bold: bold normal var(--font_size) 'roboto_cond', sans-serif;
+	
+	/* Roboto Slab */
+	--slab_regular: normal normal var(--font_size) 'roboto_slab', sans-serif;
+	--slab_bold: bold normal var(--font_size) 'roboto_slab', sans-serif;
+	
+	/* Rouble */
+	--rouble: normal normal var(--font_size) 'rouble', sans-serif;
+	
+	/* Цвета */
+	--accent_color: #FFB800;
+	
+	/* Отступы */
+	--margin_top: 22px;
+	
+	/* Цвет ошибки */
+	--error: red;
+	
+	font: normal normal var(--font_size) 'roboto', sans-serif;
+	
+}
