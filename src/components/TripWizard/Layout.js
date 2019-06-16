@@ -84,7 +84,7 @@ class Layout extends Component {
           {current === 3 && <Info />}
           {current === 4 && <Travelers onDone={this.handleDone}/>}
         </div>
-        {this.state.isDone && <Redirect to="/admin" />}
+        {this.state.isDone && <Redirect to="/admin/check" />}
       </>
     );
   }

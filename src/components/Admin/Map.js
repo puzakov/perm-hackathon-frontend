@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styles from "../Map/Map.module.css";
 import classNames from "classnames";
 import Header from "../Header";
+import { Link } from "react-router-dom";
 
 class Map extends Component {
   state = {
@@ -40,7 +41,9 @@ class Map extends Component {
               [styles["-scaled-step-3"]]: zoomPosition > 2
             })}
           >
-            <div className={[[styles["map__image"]],[styles['-admin']]].join(' ')} />
+            <div
+              className={[[styles["map__image"]], [styles["-admin"]]].join(" ")}
+            />
 
             <div className={styles["map__speed"]}>87 км/час</div>
 
@@ -132,8 +135,9 @@ class Map extends Component {
                 </div>
               </div>
 
-              <button className={[['ui-button'],['-all-width'],['-margin-top']].join(' ')}>Завершить поездку</button>
-
+              <Link className={"ui-button -all-width -margin-top"} to="/admin">
+                Завершить поездку
+              </Link>
             </div>
           </div>
         </div>
