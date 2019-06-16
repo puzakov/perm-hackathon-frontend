@@ -1,8 +1,14 @@
 import React, { Component } from "react";
+import Header from "../Header";
 
 class Home extends Component {
   render() {
-    return <h1>Стартовая страница</h1>;
+    return (
+      <>
+        <Header />
+        <h1>страница check</h1>
+      </>
+    );
   }
 }
 

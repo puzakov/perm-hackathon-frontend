@@ -3,10 +3,12 @@ import { connect } from "react-redux";
 import { getIsAuthorized } from "../../modules/Auth";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import PrivateRoute from "../PrivateRoute";
-// import Header from "../Header";
 import Map from "../Map";
 import Login from "../Login";
-import Admin, { Login as AdminLogin, Check as AdminCheck } from "../Admin";
+import Admin, {
+  // Login as AdminLogin,
+  Check as AdminCheck
+} from "../Admin";
 
 class App extends Component {
   render() {
@@ -19,9 +21,9 @@ class App extends Component {
           {!isAuthorized && <Route path="/login" component={Login} />}
           {isAuthorized && <Redirect path="/login" to="/map" />}
           <PrivateRoute path="/map" component={Map} />
-          <Route path="/admin/login" component={AdminLogin} />
-          <Route path="/admin/home" component={Admin} />
-          <Route path="/admin/check" component={AdminCheck} />
+          {/* <Route path="/admin/login" component={AdminLogin} /> */}
+          <PrivateRoute path="/admin" component={Admin} />
+          <PrivateRoute path="/admin/check" component={AdminCheck} />
           <Redirect to="/map" />
         </Switch>
       </BrowserRouter>

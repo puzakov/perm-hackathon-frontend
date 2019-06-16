@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styles from "./Map.module.css";
 import classNames from "classnames";
+import Header from "../Header";
 
 class Map extends Component {
   state = {
@@ -28,13 +29,7 @@ class Map extends Component {
     const { showInfo, zoomPosition } = this.state;
     return (
       <>
-        <header class={"header"}>
-          <div class={"header__logo"}>
-            <span>РЕБЁНОК В ПУТИ</span>
-            <i>Автобус онлайн</i>
-          </div>
-        </header>
-
+        <Header />
         <div className={[["content"], ["-no-scroll"]].join(" ")}>
           <div
             className={classNames({
