@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import styles from "./Admin.module.css";
 import { setTripList } from "../../modules/Admin";
+import styles from "../Admin/Admin.module.css";
 
 class Travelers extends Component {
   state = { search: "" };

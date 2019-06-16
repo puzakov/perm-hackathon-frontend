@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import styles from "./Admin.module.css";
 import classNames from "classnames";
 import { setTripWayPath } from "../../modules/Admin";
+import styles from "../Admin/Admin.module.css";
 
 class WayPath extends Component {
   handleChange = e => {

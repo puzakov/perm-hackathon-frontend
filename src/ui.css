@@ -24,12 +24,14 @@
 .ui-button { display: inline-block; vertical-align: top; height: 40px; padding: 0 20px; font-weight: normal; font-size: 14px; color: #fff; text-align: center; line-height: 40px; background-color: var(--accent_color); border: none; border-radius: 20px; transition: 0.2s; }
 
 	.ui-button.-all-width { display: block; width: 100%; }
+	.ui-button.-margin-top { margin-top: 20px; }
 
 
 /* Карточка перевозки */
 .ui-title { margin-bottom: 10px; font-weight: normal; font-size: 12px; text-transform: uppercase; color: rgba(0,0,0,0.5); }
 
 	.ui-title.-h2 { margin: 20px 0 10px; font-family: var(--cond_regular); font-size: 16px; color: #000; text-align: center; text-transform: none; }
+	.ui-title.-h2:first-child { margin-top: 0; }
 
 .ui-line { height: 1px; margin: 15px 0; background-color: var(--light); border: none; }
 
