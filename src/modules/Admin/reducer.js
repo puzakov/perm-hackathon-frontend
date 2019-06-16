@@ -48,7 +48,7 @@ const wayPath = handleActions(
   {
     [setTripWayPath]: (state, action) => action.payload
   },
-  []
+  { dep: "", arr: "" }
 );
 
 const trip = combineReducers({
