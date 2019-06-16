@@ -84,7 +84,7 @@ class Login extends Component {
               id="auth-submit"
               onClick={this.handleSubmit}
             >
-              {!isValidPhone ? 'Получить СМС код' : 'Войти'}
+              {!isValidPhone ? 'Получить СМС-код' : 'Войти'}
             </button>
           </div>
         </div>
