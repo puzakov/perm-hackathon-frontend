@@ -20,9 +20,23 @@ class Info extends Component {
         <div className={'ui-group'}>
           
           <div className={'ui-radio'}>
-            <input type="radio" name="driver" checked="checked"/>
+            <input type="radio" name="driver"/>
             <label>
-              111
+              Иванов Иван Иванович
+            </label>
+          </div>
+          
+          <div className={'ui-radio'}>
+            <input type="radio" name="driver"/>
+            <label>
+              Иванов Иван Иванович
+            </label>
+          </div>
+          
+          <div className={'ui-radio'}>
+            <input type="radio" name="driver"/>
+            <label>
+              Иванов Иван Иванович
             </label>
           </div>
 
@@ -42,9 +56,23 @@ class Info extends Component {
         <div className={'ui-group'}>
           
           <div className={'ui-radio'}>
-            <input type="radio" name="attendant" checked="checked"/>
+            <input type="radio" name="attendant"/>
             <label>
-              111
+              Петрова Ирина Петровна
+            </label>
+          </div>
+          
+          <div className={'ui-radio'}>
+            <input type="radio" name="attendant"/>
+            <label>
+              Петрова Ирина Петровна
+            </label>
+          </div>
+          
+          <div className={'ui-radio'}>
+            <input type="radio" name="attendant"/>
+            <label>
+              Петрова Ирина Петровна
             </label>
           </div>
 
