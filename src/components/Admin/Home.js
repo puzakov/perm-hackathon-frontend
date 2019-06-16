@@ -1,31 +1,15 @@
 import React, { Component } from "react";
 import Header from "../Header";
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
   render() {
     return (
       <>
-        
-        <header class={"header"}>
-          <div class={"header__logo"}>
-            <span>РЕБЁНОК В ПУТИ</span>
-            <i>Автобус онлайн</i>
-          </div>
-        </header>
-
-        <div className={[["content"], ["-no-scroll"], ['-padding']].join(" ")}>
-          
-          <button className={'ui-add'}>Новая поездка</button>
-
-          <div className={'ui-tabs'}>
-            <div className={[['ui-tabs__item'],['-active']].join(' ')}>Автобус</div>
-            <div className={'ui-tabs__item'}>Маршрут</div>
-            <div className={'ui-tabs__item'}>Информация</div>
-            <div className={'ui-tabs__item'}>Список</div>
-          </div>
-
+        <Header />
+        <div className={[["content"], ["-no-scroll"], ["-padding"]].join(" ")}>
+          <Link className={"ui-add"} to="/admin/wizard">Новая поездка</Link>
         </div>
-
       </>
     );
   }

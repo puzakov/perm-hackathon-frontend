@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import PrivateRoute from "../PrivateRoute";
 import Map from "../Map";
 import Login from "../Login";
+import TripWizard from "../TripWizard";
 import Admin, {
   // Login as AdminLogin,
   Check as AdminCheck
@@ -22,7 +23,8 @@ class App extends Component {
           {isAuthorized && <Redirect path="/login" to="/map" />}
           <PrivateRoute path="/map" component={Map} />
           {/* <Route path="/admin/login" component={AdminLogin} /> */}
-          <PrivateRoute path="/admin" component={Admin} />
+          <PrivateRoute exact path="/admin" component={Admin} />
+          <PrivateRoute path="/admin/wizard" component={TripWizard} />
           <PrivateRoute path="/admin/check" component={AdminCheck} />
           <Redirect to="/map" />
         </Switch>
