@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import styles from "./Admin.module.css";
 
 class Travelers extends Component {
   render() {
@@ -19,13 +20,138 @@ class Travelers extends Component {
 
         <div className={'ui-group'}>
           
-          <div className={'ui-checked'}>
-            <input type="checkbox" checked="checked"/>
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
+            <label>
+              Котельников Никита
+            </label>
+          </div>
+          
+          <div className={'ui-checkbox'}>
+            <input type="checkbox"/>
             <label>
               Котельников Никита
             </label>
           </div>
 
+        </div>
+
+        <div className={styles['admin-bottom-spacer']}></div>
+
+        <div className={styles['admin-bottom-button']}>
+          <button className={[['ui-button'],['-all-width']].join(' ')}>Перейти к чеклисту</button>
         </div>
 
       </>

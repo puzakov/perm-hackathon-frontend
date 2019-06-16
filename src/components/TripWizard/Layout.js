@@ -11,7 +11,7 @@ class Layout extends Component {
     return (
       <>
         <Header />
-        <div className={[["content"], ["-no-scroll"], ["-padding"]].join(" ")}>
+        <div className={[["content"], ["-padding"]].join(" ")}>
           <div className={"ui-tabs"}>
             <div className={[["ui-tabs__item"], ["-active"]].join(" ")}>
               Автобус
@@ -21,10 +21,10 @@ class Layout extends Component {
             <div className={"ui-tabs__item"}>Список</div>
           </div>
 
-          <Bus />
+          {/* <Bus /> */}
           {/* <Info /> */}
           {/* <WayPath /> */}
-          {/* <Travelers /> */}
+          <Travelers />
         </div>
       </>
     );
