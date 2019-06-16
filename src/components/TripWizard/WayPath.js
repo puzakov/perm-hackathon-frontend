@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import styles from "./Admin.module.css";
+import styles from "../Admin/Admin.module.css";
 
 class WayPath extends Component {
   render() {

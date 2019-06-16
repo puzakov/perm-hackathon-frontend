@@ -6,6 +6,7 @@
   .map__controls { display: block; position: absolute; }
 
   .map__image { top: 0; right: 0; bottom: 0; left: 0; background: url(/img/map.png) center center no-repeat; background-size: cover; transition: 0.4s; }
+  .map__image.-admin { background-image: url(/img/map-admin.png); }
   .map.-scaled-step-1 .map__image { transform: scale(1.5); }
   .map.-scaled-step-2 .map__image { transform: scale(2); }
   .map.-scaled-step-3 .map__image { transform: scale(3); }
