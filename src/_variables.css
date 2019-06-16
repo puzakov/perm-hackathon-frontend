@@ -26,7 +26,10 @@ body {
 	
 	/* Цвета */
 	--accent_color: #FFB800;
+	--accent_color_muted: rgba(255,184,0,0.2);
 	--green: #99CB87;
+	--gray: #777;
+	--light: #f2f2f2;
 	
 	/* Отступы */
 	--margin_top: 22px;
