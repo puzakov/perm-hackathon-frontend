@@ -95,7 +95,7 @@ class Map extends Component {
                 </div>
               </div>
 
-              <hr class="ui-line" />
+              <hr className="ui-line" />
 
               <h6 className={"ui-title"}>Сопровождающий</h6>
 
@@ -113,7 +113,7 @@ class Map extends Component {
                 </div>
               </div>
 
-              <hr class="ui-line" />
+              <hr className="ui-line" />
 
               <h6 className={"ui-title"}>Динамическая информация о поездке</h6>
 

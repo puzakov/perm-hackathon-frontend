@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Redirect } from "react-router-dom";
 import Travelers from "./Travelers";
 import Info from "./Info";
 import Bus from "./Bus";
@@ -7,6 +8,12 @@ import WayPath from "./WayPath";
 import Header from "../Header";
 
 class Layout extends Component {
+  state = { isDone: false };
+
+  handleWizardDone = () => {
+    this.setState({ redirect: true });
+  };
+
   render() {
     return (
       <>
@@ -26,6 +33,7 @@ class Layout extends Component {
           {/* <WayPath /> */}
           <Travelers />
         </div>
+        {this.state.isDone && <Redirect to="/admin" />}
       </>
     );
   }
