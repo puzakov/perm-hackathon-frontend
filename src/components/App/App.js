@@ -6,6 +6,7 @@ import PrivateRoute from "../PrivateRoute";
 import Map from "../Map";
 import Login from "../Login";
 import TripWizard from "../TripWizard";
+import Child from "../Child";
 import Admin, {
   // Login as AdminLogin,
   Check as AdminCheck,
@@ -28,6 +29,7 @@ class App extends Component {
           <PrivateRoute path="/admin/wizard" component={TripWizard} />
           <PrivateRoute path="/admin/check" component={AdminCheck} />
           <PrivateRoute path="/admin/map" component={AdminMap} />
+          <Route exact path="/child" component={Child} />
           <Redirect to="/map" />
         </Switch>
       </BrowserRouter>
