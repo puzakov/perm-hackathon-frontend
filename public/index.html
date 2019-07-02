@@ -5,8 +5,15 @@
     <meta charset="utf-8"/>
 		
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
-		
-		<link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/img/favicon/favicon.png"/>
+    <!-- Tell the browser it's a PWA -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Tell iOS it's a PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <meta name="theme-color" content="#536878">
+    
+    <link rel="shortcut icon" href="%PUBLIC_URL%/img/favicon/favicon.png">
+    <!-- <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/img/favicon/favicon.png"/> -->
 		<link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-57x57.png"/>
 		<link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-60x60.png"/>
 		<link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/img/favicon/apple-touch-icon-72x72.png"/>
@@ -33,10 +40,28 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .App {
+        text-align: center;
+      }
+      .App-intro {
+        font-size: large;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="App">
+        <p class="App-intro">
+          Loading...
+        </p>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -47,5 +72,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          }).catch(function(err) {
+            console.log(err)
+          });
+        });
+      } else {
+        console.log('service worker is not supported');
+      }
+    </script>
   </body>
 </html>
